@@ -4,10 +4,13 @@ metadata:
   name: syncit
   project: ankit
 spec:
+  base:
+    name: default
+    version: 1.13.0
   defaultAddons:
-    enableIngress: false
-    enableLogging: false
-    enableMonitoring: false
+    enableIngress: true
+    enableLogging: true
+    enableMonitoring: true
     enableVM: false
   drift:
     enabled: false
@@ -15,3 +18,4 @@ spec:
   placement: {}
   sharing:
     enabled: false
+  version: v1
