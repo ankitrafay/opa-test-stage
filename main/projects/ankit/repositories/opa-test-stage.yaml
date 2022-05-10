@@ -1,16 +1,16 @@
 apiVersion: integrations.k8smgmt.io/v3
 kind: Repository
 metadata:
-  name: avinash
+  name: opa-test-stage
   project: ankit
 spec:
   agents:
   - name: dfasdf
   credentials:
     password: sealed://credentials.password
-    username: avinash@rafay.co
-  endpoint: https://github.com/avinash-rafay/gitops.git
+    username: ankit@rafay.co
+  endpoint: https://github.com/ankitrafay/opa-test-stage.git
   options: {}
   secret:
-    name: file://artifacts/avinash/sealed-secret.yaml
+    name: file://artifacts/opa-test-stage/sealed-secret.yaml
   type: Git
