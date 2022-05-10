@@ -1,0 +1,24 @@
+apiVersion: gitops.k8smgmt.io/v3
+kind: Pipeline
+metadata:
+  name: aafe
+  project: ankit
+spec:
+  active: false
+  sharing:
+    enabled: false
+  stages:
+  - config:
+      destinationRepo: {}
+      gitToSystemSync: true
+      includedResources:
+      - name: '*'
+      sourceAsDestination: true
+      sourceRepo:
+        path:
+          name: main
+        repository: opa-test-stage
+        revision: main
+      systemToGitSync: true
+    name: test
+    type: SystemSync

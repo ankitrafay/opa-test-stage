@@ -1,0 +1,10 @@
+apiVersion: gitops.k8smgmt.io/v3
+kind: Agent
+metadata:
+  name: dfasdf
+  project: ankit
+spec:
+  active: true
+  cluster:
+    name: mini-stage
+  type: Cluster
